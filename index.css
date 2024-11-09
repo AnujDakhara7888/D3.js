@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#controls, #pie-controls, #scatter-controls {
+    margin: 20px;
+}
+
+select {
+    margin-right: 10px;
+}
+
+#chart, #pie-chart, #scatter-plot {
+    margin-top: 20px;
+}

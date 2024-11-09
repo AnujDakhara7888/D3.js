@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Charts</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="x-axis">Select X Axis:</label>
+        <select id="x-axis">
+            <option value="Team">Team</option>
+            <option value="Nation">Nation</option>
+            <option value="Position">Position</option>
+        </select>
+
+        <label for="y-axis">Select Y Axis:</label>
+        <select id="y-axis">
+            <option value="Goals">Goals</option>
+            <option value="Assists">Assists</option>
+            <option value="PenaltyKicks">Penalty Kicks</option>
+            <option value="PenaltyKicksAttempted">Penalty Kicks Attempted</option>
+            <option value="YellowCards">Yellow Cards</option>
+            <option value="RedCards">Red Cards</option>
+            <option value="ExpectedGoals">Expected Goals</option>
+            <option value="ExpectedAssistGoals">Expected Assist Goals</option>
+            <option value="ProgressiveCarries">Progressive Carries</option>
+            <option value="ProgressivePasses">Progressive Passes</option>
+            <option value="ProgressiveRuns">Progressive Runs</option>
+        </select>
+    </div>
+
+    <div id="chart"></div>
+
+    <div id="pie-controls">
+        <label for="select-pie">Select one:</label>
+        <select id="select-pie">
+            <option value="Position">Position</option>
+            <option value="Nation">Nation</option>
+            <option value="Age">Age</option>
+        </select>
+    </div>
+
+    <div id="pie-chart"></div>
+
+    <div id="scatter-controls">
+        <label for="scatter-per">Select Scatter per:</label>
+        <select id="scatter-per">
+            <option value="Team">Team</option>
+            <option value="Position">Position</option>
+            <option value="Age">Age</option>
+        </select>
+
+        <label for="x-scatter">Select X Axis:</label>
+        <select id="x-scatter">
+            <option value="MatchesPlayed">Matches Played</option>
+            <option value="Starts">Starts</option>
+            <option value="MinutesPlayed">Minutes Played</option>
+            <option value="EquOf90minsPlayed">Equ of 90 mins Played</option>
+            <option value="Goals">Goals</option>
+            <option value="Assists">Assists</option>
+            <option value="PenaltyKicks">Penalty Kicks</option>
+            <option value="PenaltyKicksAttempted">Penalty Kicks Attempted</option>
+            <option value="YellowCards">Yellow Cards</option>
+            <option value="RedCards">Red Cards</option>
+            <option value="ExpectedGoals">Expected Goals</option>
+            <option value="ExpectedAssistGoals">Expected Assist Goals</option>
+            <option value="ProgressiveCarries">Progressive Carries</option>
+            <option value="ProgressivePasses">Progressive Passes</option>
+            <option value="ProgressiveRuns">Progressive Runs</option>
+        </select>
+
+        <label for="y-scatter">Select Y Axis:</label>
+        <select id="y-scatter">
+            <option value="MatchesPlayed">Matches Played</option>
+            <option value="Starts">Starts</option>
+            <option value="MinutesPlayed">Minutes Played</option>
+            <option value="EquOf90minsPlayed">Equ of 90 mins Played</option>
+            <option value="Goals">Goals</option>
+            <option value="Assists">Assists</option>
+            <option value="PenaltyKicks">Penalty Kicks</option>
+            <option value="PenaltyKicksAttempted">Penalty Kicks Attempted</option>
+            <option value="YellowCards">Yellow Cards</option>
+            <option value="RedCards">Red Cards</option>
+            <option value="ExpectedGoals">Expected Goals</option>
+            <option value="ExpectedAssistGoals">Expected Assist Goals</option>
+            <option value="ProgressiveCarries">Progressive Carries</option>
+            <option value="ProgressivePasses">Progressive Passes</option>
+            <option value="ProgressiveRuns">Progressive Runs</option>
+        </select>
+    </div>
+
+    <div id="scatter-plot"></div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
